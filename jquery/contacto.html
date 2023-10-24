@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./media/_34403b64-f84f-4946-ae05-75b4d9434e74.jpeg" alt="Logo de Electronica 2023">
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section>
+        <h2>Información de Contacto</h2>
+        <p>¡Estamos encantados de ayudarte! Aquí tienes nuestras formas de contacto:</p>
+        <ul>
+            <li>Email: <a href="mailto:info@tuempresa.com">info@tuempresa.com</a></li>
+            <li>Teléfono: <a href="tel:+123456789">123-456-789</a></li>
+            <li>Dirección: Calle Principal, Ciudad</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Formulario de Contacto</h2>
+        <p>Si prefieres, puedes llenar el siguiente formulario para contactarnos:</p>
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy;Electronica 2023</p>
+    </footer>
+</body>
+</html>

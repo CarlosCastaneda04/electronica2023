@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+  background-color: #f1f1f1; /* Color de fondo para el cuerpo de la página */
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos de las secciones */
+.hero,
+.quienes-somos,
+.contacto,
+.tipos-instrumentos {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+
+  border: 1px solid #ddd;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilos de los enlaces en hover */
+li a:hover {
+  text-decoration: underline;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////*
+/* Estilo para hacer el logo más pequeño */
+
+/* Estilo para la barra de navegación */
+nav {
+  display: flex; /* Convierte los elementos en una fila */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilo para la lista de navegación */
+ul {
+  list-style: none; /* Quita los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Convierte los elementos de la lista en una fila */
+}
+
+/* Estilo para los elementos de la lista de navegación */
+li {
+  margin-right: 20px;
+  justify-content: center; /* Agrega espacio entre los elementos */
+}
+
+/* Estilo para los enlaces */
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilo para el logo */
+.logo img {
+  max-width: 70px; /* Ajusta el tamaño del logo según tus preferencias */
+  height: auto;
+  justify-content: left;
+  padding-right: 25px; /* Mantiene la proporción original */
+}
+
+/* Estilo para centrar las imágenes en los elementos .instrumento */
+.instrumento img {
+  display: block; /* Para controlar el margen automático */
+  margin: 0 auto; /* Centra horizontalmente la imagen */
+}
+
+/* Estilo para centrar las imágenes en los elementos .card */
+.card img {
+  display: block; /* Para controlar el margen automático */
+  margin: 0 auto; /* Centra horizontalmente la imagen */
+}
+
+/* Estilo para centrar horizontalmente el texto en la barra de navegación */
+nav ul {
+  display: flex; /* Centra horizontalmente los elementos de la lista */
+  justify-content: right !important;
+  padding-left: 25%;
+  height: 100%; /* Alinea verticalmente los elementos dentro del espacio de navegación */
+}
+
+/* Estilo para los elementos de la lista de navegación */
+nav ul li {
+  margin-right: 100px;
+  justify-content: center; /* Espacio entre elementos */
+}
+.instrumento {
+  text-align: center;
+  position: relative;
+  padding-top: 5%;
+}
+
+.mostrar-datos {
+  position: absolute;
+  bottom: -20px; /* Ajusta la posición vertical como desees */
+  left: 50%; /* Centra horizontalmente en el contenedor */
+  transform: translateX(-50%); /* Centra horizontalmente en el contenedor */
+}
