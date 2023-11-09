@@ -1,19 +1,9 @@
 /* Estilos generales */
 body {
-  background-color: #f1f1f1; /* Color de fondo para el cuerpo de la página */
-  font-family: Arial, sans-serif;
-}
-
-/* Estilos de las secciones */
-.hero,
-.quienes-somos,
-.contacto,
-.tipos-instrumentos {
-  background: white;
-  padding: 20px;
-  margin: 20px;
-
-  border: 1px solid #ddd;
+  background-color: #f4f4f4; /* Cambié el color de fondo */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilos de la barra de navegación */
@@ -21,99 +11,180 @@ nav {
   background: #333;
   color: white;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos en la barra de navegación */
 }
 
 li {
   display: inline;
-  margin-right: 10px;
-}
-
-li a {
-  text-decoration: none;
-  color: white;
-}
-
-/* Estilos de los enlaces en hover */
-li a:hover {
-  text-decoration: underline;
-}
-/*////////////////////////////////////////////////////////////////////////////////////////////////////*
-/* Estilo para hacer el logo más pequeño */
-
-/* Estilo para la barra de navegación */
-nav {
-  display: flex; /* Convierte los elementos en una fila */
-  align-items: center; /* Centra verticalmente los elementos */
-}
-
-/* Estilo para la lista de navegación */
-ul {
-  list-style: none; /* Quita los puntos de la lista */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center; /* Convierte los elementos de la lista en una fila */
-}
-
-/* Estilo para los elementos de la lista de navegación */
-li {
   margin-right: 20px;
-  justify-content: center; /* Agrega espacio entre los elementos */
 }
 
-/* Estilo para los enlaces */
 li a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
-/* Estilo para el logo */
+li a:hover {
+  color: #FF5733; /* Cambié el color al pasar el mouse */
+}
+
+/* Estilos del logo */
 .logo img {
-  max-width: 70px; /* Ajusta el tamaño del logo según tus preferencias */
-  height: auto;
-  justify-content: left;
-  padding-right: 25px; /* Mantiene la proporción original */
+  max-width: 80px; /* Ajusté el tamaño del logo */
 }
 
-/* Estilo para centrar las imágenes en los elementos .instrumento */
-.instrumento img {
-  display: block; /* Para controlar el margen automático */
-  margin: 0 auto; /* Centra horizontalmente la imagen */
-}
-
-/* Estilo para centrar las imágenes en los elementos .card */
-.card img {
-  display: block; /* Para controlar el margen automático */
-  margin: 0 auto; /* Centra horizontalmente la imagen */
-}
-
-/* Estilo para centrar horizontalmente el texto en la barra de navegación */
-nav ul {
-  display: flex; /* Centra horizontalmente los elementos de la lista */
-  justify-content: right !important;
-  padding-left: 25%;
-  height: 100%; /* Alinea verticalmente los elementos dentro del espacio de navegación */
-}
-
-/* Estilo para los elementos de la lista de navegación */
-nav ul li {
-  margin-right: 100px;
-  justify-content: center; /* Espacio entre elementos */
-}
-.instrumento {
+/* Estilos de la sección hero */
+.hero {
+  background: url('./media/hero-background.jpg') center/cover no-repeat;
+  padding: 100px 0;
   text-align: center;
-  position: relative;
-  padding-top: 5%;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Estilos de la sección de instrumentos */
+.instrumentos {
+  background: #F9F9F9;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.instrumento {
+  margin: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.instrumento img {
+  max-width: 100%;
 }
 
 .mostrar-datos {
-  position: absolute;
-  bottom: -20px; /* Ajusta la posición vertical como desees */
-  left: 50%; /* Centra horizontalmente en el contenedor */
-  transform: translateX(-50%); /* Centra horizontalmente en el contenedor */
+  background: #FF5733; /* Cambié el color del botón */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.mostrar-datos:hover {
+  background: #E74C3C; /* Cambié el color al pasar el mouse */
+}
+
+.datos-guitarra {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Estilos de la sección de tipos de instrumentos */
+.tipos-instrumentos {
+  background: #F4F4F4;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.card {
+  margin: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+/* Otros estilos */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilos del botón flotante */
+.btn-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #FF5733;
+  color: white;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.btn-flotante:hover {
+  background: #E74C3C; /* Cambia el color al pasar el mouse */
+}
+
+/*Cuerdas*/
+/* Estilos para los datos adicionales */
+.datos-guitarra,
+.datos-violin {
+  display: none;
+  padding: 10px;
+}
+
+/* Estilo para el pie de página */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
