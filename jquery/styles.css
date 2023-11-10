@@ -84,6 +84,11 @@ li a:hover {
   max-width: 100%;
 }
 
+.datos-instrumento {
+  display: none;
+}
+
+
 .mostrar-datos {
   background: #FF5733; /* Cambié el color del botón */
   color: white;
@@ -96,7 +101,7 @@ li a:hover {
 }
 
 .mostrar-datos:hover {
-  background: #E74C3C; /* Cambié el color al pasar el mouse */
+  background: #df4a39; /* Cambié el color al pasar el mouse */
 }
 
 .datos-guitarra {
@@ -173,18 +178,99 @@ p {
   background: #E74C3C; /* Cambia el color al pasar el mouse */
 }
 
-/*Cuerdas*/
-/* Estilos para los datos adicionales */
-.datos-guitarra,
-.datos-violin {
-  display: none;
-  padding: 10px;
+/* Estilos para la página de cuerdas */
+.instrumentos-cuerda {
+  background: #F9F9F9; /* Cambia el fondo a un color similar al de la sección de instrumentos */
+  padding: 40px 0;
+  text-align: center;
 }
 
-/* Estilo para el pie de página */
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
+.instrumentos-cuerda h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.instrumento-cuerda {
+  margin: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.instrumento-cuerda img {
+  max-width: 100%;
+}
+
+.datos-cuerda {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Estilos para la página de instrumentos de viento */
+.instrumentos-viento {
+  background: #ffffff; /* Cambia el color de fondo para instrumentos de viento */
+  padding: 40px 0;
+  text-align: center;
+}
+
+
+
+.instrumentos-viento .instrumento img {
+  max-width: 100%;
+}
+
+
+.instrumentos-viento .datos-instrumento {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Otros estilos específicos para la página de instrumentos de viento */
+.instrumentos-viento h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Estilos de la sección de instrumentos de percusión */
+.instrumentos-percusion {
+  background: #F9F9F9;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.instrumentos-percusion .instrumento {
+  margin: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.instrumentos-percusion .instrumento img {
+  max-width: 100%;
+}
+
+/* Estilos de la sección de instrumentos de teclado */
+.instrumentos-teclado {
+  background: #F9F9F9;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.instrumentos-teclado .instrumento {
+  margin: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.instrumentos-teclado .instrumento img {
+  max-width: 100%;
 }
